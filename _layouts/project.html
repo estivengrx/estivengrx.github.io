@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="project-page">
+  <p class="eyebrow">{{ page.category }}{% if page.status %} · {{ page.status }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.summary }}</p>
+  {% if page.image %}
+  <figure class="hero-figure">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+    {% if page.caption %}<figcaption>{{ page.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+  <div class="project-grid">
+    <div class="project-copy">{{ content }}</div>
+    <aside class="project-meta">
+      <h2>Tools</h2>
+      <ul>{% for tool in page.tools %}<li>{{ tool }}</li>{% endfor %}</ul>
+      <h2>Links</h2>
+      {% if page.repo %}<a class="button secondary" href="{{ page.repo }}">Repository</a>{% endif %}
+      {% if page.notebook %}<a class="button secondary" href="{{ page.notebook }}">Notebook / analysis</a>{% endif %}
+    </aside>
+  </div>
+</article>
+

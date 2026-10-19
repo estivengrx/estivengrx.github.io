@@ -1,0 +1,19 @@
+title: "Estiven Castrillón | Physics portfolio"
+description: "Computational physics and high-energy physics portfolio of Estiven Castrillón."
+url: "https://estivengrx.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: pretty
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      seo: true
+
