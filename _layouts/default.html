@@ -16,7 +16,7 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>{% endif %}
   </head>
-  <body>
+  <body class="{% if page.physics_visual %}physics-page{% endif %}">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-wrap">
@@ -31,7 +31,10 @@
         <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
       </div>
     </header>
-    <main id="main" class="container">{{ content }}</main>
+    <main id="main" class="container">
+      <div class="field-lines" aria-hidden="true"></div>
+      {{ content }}
+    </main>
     <footer class="site-footer">
       <div class="container footer-wrap">
         <span>Estiven Castrillón · Physics</span>
@@ -41,4 +44,3 @@
     </footer>
   </body>
 </html>
-

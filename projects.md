@@ -19,6 +19,7 @@ description: Selected computational physics, experimental physics, and HEP proje
 <div class="project-list">
 {% for project in site.projects %}
   <article class="project-row" data-tags="{{ project.tags | join: ',' }}">
+    {% if project.image %}<a class="project-thumb" href="{{ project.url | relative_url }}"><img src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}"></a>{% endif %}
     <div><p class="eyebrow">{{ project.category }}{% if project.status %} · {{ project.status }}{% endif %}</p><h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2></div>
     <p>{{ project.summary }}</p>
     <a class="text-link" href="{{ project.url | relative_url }}">View →</a>

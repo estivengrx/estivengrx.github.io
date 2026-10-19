@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#ee8b70" stop-opacity=".95"/><stop offset="1" stop-color="#ee8b70" stop-opacity="0"/></radialGradient>
+    <linearGradient id="wave" x1="0" x2="1"><stop stop-color="#4da6a8" stop-opacity="0"/><stop offset=".5" stop-color="#68d1cc"/><stop offset="1" stop-color="#4da6a8" stop-opacity="0"/></linearGradient>
+  </defs>
+  <circle cx="280" cy="250" r="92" fill="url(#glow)" opacity=".35"/>
+  <g fill="none" stroke="#4da6a8" stroke-width="2" opacity=".65">
+    <ellipse cx="280" cy="250" rx="100" ry="220" transform="rotate(35 280 250)"/>
+    <ellipse cx="280" cy="250" rx="100" ry="220" transform="rotate(-35 280 250)"/>
+    <ellipse cx="280" cy="250" rx="145" ry="220" transform="rotate(90 280 250)"/>
+    <circle cx="280" cy="250" r="142"/><circle cx="280" cy="250" r="190"/>
+  </g>
+  <path d="M25 355 C95 285 130 425 202 350 S310 280 370 345 S470 420 535 335" fill="none" stroke="url(#wave)" stroke-width="5"/>
+  <path d="M20 390 C90 320 132 455 205 385 S310 315 375 380 S470 455 540 370" fill="none" stroke="#ee8b70" stroke-width="2" opacity=".7"/>
+  <circle cx="280" cy="250" r="18" fill="#edf3f1" stroke="#ee8b70" stroke-width="7"/>
+  <g fill="#edf3f1" stroke="#173b4d" stroke-width="3">
+    <circle cx="152" cy="112" r="8"/><circle cx="438" cy="155" r="7"/><circle cx="104" cy="300" r="6"/><circle cx="440" cy="345" r="8"/>
+  </g>
+  <g font-family="sans-serif" fill="#173b4d" font-size="16" letter-spacing="2">
+    <text x="280" y="46" text-anchor="middle">FIELDS · WAVES · EVENTS</text>
+    <text x="280" y="492" text-anchor="middle">COMPUTATIONAL PHYSICS</text>
+  </g>
+</svg>
