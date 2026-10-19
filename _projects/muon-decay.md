@@ -11,6 +11,13 @@ caption: "Project output: simulated electron-energy spectrum with the radiative 
 repo: "https://github.com/estivengrx/monte-carlo-particle-decay"
 tools: ["Python", "NumPy", "SciPy", "Matplotlib", "Monte Carlo", "pytest", "LaTeX"]
 math: true
+gallery:
+  - image: "/assets/images/muon-spectrum-tree-level.png"
+    alt: "Histogram of the simulated electron energy spectrum without radiative corrections."
+    caption: "Tree-level spectrum."
+  - image: "/assets/images/muon-spectrum-radiative.png"
+    alt: "Histogram of the simulated electron energy spectrum with radiative corrections."
+    caption: "Spectrum with the order-alpha radiative contribution."
 ---
 ## Context
 
@@ -34,9 +41,15 @@ calculation: it is not a complete bound-muon or nuclear model, and the global
 envelope used by the rejection sampler still requires the verification described
 in the source README.
 
+The dimensionless energy variable is written as \(x = E_e/E_{\max}\). The
+leading-order shape used as physical context is
+
+$$
+\frac{d\Gamma}{dx} \propto x^2(3-2x).
+$$
+
 ## What I learned
 
 This project made the connection between a differential decay spectrum, a
 sampling algorithm, numerical diagnostics, and reproducible figure generation
 concrete. It also made the limits of a result part of the result.
-

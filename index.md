@@ -17,6 +17,19 @@ physics_visual: true
   <div class="hero-visual"><img src="{{ '/assets/images/physics-hero.svg' | relative_url }}" alt="" aria-hidden="true"></div>
 </section>
 
+<section class="equation-band" aria-labelledby="equation-title">
+  <div>
+    <p class="eyebrow">Models I work with</p>
+    <h2 id="equation-title">Equations become code, plots, and checks.</h2>
+    <p>From a decay spectrum to a boundary-value problem, I use equations as a bridge between physical assumptions and numerical output.</p>
+  </div>
+  <div class="equation-stack">
+    <div class="equation-card">$$\frac{d\Gamma}{dx} \propto x^2(3-2x)$$<span>Michel-spectrum structure</span></div>
+    <div class="equation-card">$$\nabla^2 \phi = 0$$<span>Laplace boundary-value problem</span></div>
+    <div class="equation-card">$$\langle x \rangle \approx \frac{1}{N}\sum_{i=1}^{N}x_i$$<span>Monte Carlo estimate</span></div>
+  </div>
+</section>
+
 <section class="section">
   <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Evidence, not a list of buzzwords.</h2></div>
   <div class="card-grid">

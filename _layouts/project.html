@@ -11,6 +11,16 @@ layout: default
     {% if page.caption %}<figcaption>{{ page.caption }}</figcaption>{% endif %}
   </figure>
   {% endif %}
+  {% if page.gallery %}
+  <div class="visual-gallery" aria-label="Project visualizations">
+    {% for figure in page.gallery %}
+    <figure class="gallery-item">
+      <img src="{{ figure.image | relative_url }}" alt="{{ figure.alt }}">
+      <figcaption>{{ figure.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="project-grid">
     <div class="project-copy">{{ content }}</div>
     <aside class="project-meta">
@@ -22,4 +32,3 @@ layout: default
     </aside>
   </div>
 </article>
-

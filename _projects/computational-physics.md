@@ -31,9 +31,27 @@ reference and explores tolerance and iteration choices. The portfolio uses a
 schematic figure here because the original notebooks contain course-context
 material that should not be redistributed without a separate rights review.
 
+The governing equation for the representative Laplace problem is
+
+$$
+\nabla^2 \phi =
+\frac{\partial^2\phi}{\partial x^2}
+\frac{\partial^2\phi}{\partial y^2}=0,
+$$
+
+and the Jacobi update replaces each interior value with the mean of its four
+nearest neighbours:
+
+$$
+\phi_{i,j}^{(n+1)}
+=\frac{1}{4}\left(
+\phi_{i+1,j}^{(n)}+\phi_{i-1,j}^{(n)}
+\phi_{i,j+1}^{(n)}+\phi_{i,j-1}^{(n)}
+\right).
+$$
+
 ## What I learned
 
 These notebooks strengthened my understanding of discretization, boundary
 conditions, convergence, and the practical role of visual diagnostics in
 numerical physics.
-

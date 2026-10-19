@@ -33,9 +33,18 @@ time-series analysis, and electronics interfacing. Exact values and uncertainty
 claims belong to the corresponding notebooks, not to a generalized portfolio
 summary.
 
+For the temperature comparison, the classical ideal-gas model gives the
+reference relationship
+
+$$
+v_{\mathrm{s}}(T)=\sqrt{\frac{\gamma R T}{M}},
+$$
+
+where the measured data are compared with the model rather than being treated
+as an exact identity.
+
 ## What I learned
 
 Experimental work taught me to keep acquisition choices, units, calibration,
 uncertainty, and plots connected. It also showed why a clear data trail matters
 as much as a final graph.
-
