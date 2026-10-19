@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img">
+  <rect width="800" height="420" fill="#f4f1ea"/>
+  <g stroke="#315d72" stroke-width="2" opacity=".75">
+    <path d="M120 70H680M120 140H680M120 210H680M120 280H680M120 350H680"/>
+    <path d="M120 70V350M260 70V350M400 70V350M540 70V350M680 70V350"/>
+  </g>
+  <path d="M120 70H680V350H120Z" fill="none" stroke="#173b4d" stroke-width="5"/>
+  <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#173b4d">finite-difference grid</text>
+  <text x="400" y="392" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#315d72">Dirichlet boundary values · Jacobi updates</text>
+</svg>
+
